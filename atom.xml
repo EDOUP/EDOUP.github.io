@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-26T16:26:55.042Z</updated>
+  <updated>2018-12-24T08:44:06.170Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>git使用中遇到的一些问题</title>
+    <link href="http://yoursite.com/2018/12/24/page/"/>
+    <id>http://yoursite.com/2018/12/24/page/</id>
+    <published>2018-12-24T08:13:46.000Z</published>
+    <updated>2018-12-24T08:44:06.170Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p><strong>如何解决failed to push some refs to git?</strong></p><font color="#ff00ff" size="4">$ git push -u origin master</font><p>To <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:  xxx/xxxxx.git</p><p> ! [rejected]        master -&gt; master (non-fast-forward)</p><font color="#ff0000" size="4">error:failed to push some refs to <a href="mailto:&#39;git@github.com" target="_blank" rel="noopener">&#39;git@github.com</a>:xxx/xxx.git’</font> <p>hint: Updates were rejected because the tip of your current branch is behin</p><p>hint: its remote counterpart. Integrate the remote changes (e.g.</p><p>hint: ‘git pull …’) before pushing again.</p><p>主要原因是github中的README.md文件不在本地代码目录中</p><p>可以通过如下命令进行代码合并【注：pull=fetch+merge]</p><font color="#ff00ff" size="4">$ git pull –rebase origin master</font><p>执行上面代码后可以看到本地代码库中多了README.md文件</p><p>此时再执行语句 <font color="#ff00ff" size="3">git push -u origin master</font>即可完成代码上传到github</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;如何解决failed to push some refs to git?&lt;/strong&gt;&lt;/p&gt;
+&lt;font color=
+      
+    
+    </summary>
+    
+      <category term="笔记 git 问题" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0-git-%E9%97%AE%E9%A2%98/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>小巷</title>
     <link href="http://yoursite.com/2018/11/27/%E5%B0%8F%E5%B7%B7/"/>
     <id>http://yoursite.com/2018/11/27/小巷/</id>
     <published>2018-11-26T16:23:50.000Z</published>
-    <updated>2018-11-26T16:26:55.042Z</updated>
+    <updated>2018-12-02T04:43:03.681Z</updated>
     
     <content type="html"><![CDATA[<p><strong><em>小巷</em></strong></p><p>作者：顾城</p><p>小巷<br>又弯又长</p><p>没有门<br>没有窗</p><p>我拿把旧钥匙<br>敲着厚厚的墙</p>]]></content>
     
@@ -53,7 +79,7 @@
     <link href="http://yoursite.com/2018/11/25/hello-world/"/>
     <id>http://yoursite.com/2018/11/25/hello-world/</id>
     <published>2018-11-24T16:21:36.000Z</published>
-    <updated>2018-11-26T13:30:06.669Z</updated>
+    <updated>2018-12-02T04:43:03.680Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
