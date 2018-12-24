@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="问题如何解决failed to push some refs to git? $ git push -u origin master  To git@github.com:  xxx/xxxxx.git  ! [rejected]        master -&amp;gt; master (non-fast-forward) error:failed to push some refs to &amp;#39">
+<meta name="description" content="问题1： 如何解决failed to push some refs to git? $ git push -u origin master  To git@github.com:  xxx/xxxxx.git  ! [rejected]        master -&amp;gt; master (non-fast-forward) error:failed to push some refs to &amp;">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git使用中遇到的一些问题">
 <meta property="og:url" content="http://yoursite.com/2018/12/24/git使用中遇到的一些问题/index.html">
 <meta property="og:site_name" content="EdsinSeven">
-<meta property="og:description" content="问题如何解决failed to push some refs to git? $ git push -u origin master  To git@github.com:  xxx/xxxxx.git  ! [rejected]        master -&amp;gt; master (non-fast-forward) error:failed to push some refs to &amp;#39">
+<meta property="og:description" content="问题1： 如何解决failed to push some refs to git? $ git push -u origin master  To git@github.com:  xxx/xxxxx.git  ! [rejected]        master -&amp;gt; master (non-fast-forward) error:failed to push some refs to &amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-24T08:53:03.111Z">
+<meta property="og:updated_time" content="2018-12-24T09:07:03.355Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git使用中遇到的一些问题">
-<meta name="twitter:description" content="问题如何解决failed to push some refs to git? $ git push -u origin master  To git@github.com:  xxx/xxxxx.git  ! [rejected]        master -&amp;gt; master (non-fast-forward) error:failed to push some refs to &amp;#39">
+<meta name="twitter:description" content="问题1： 如何解决failed to push some refs to git? $ git push -u origin master  To git@github.com:  xxx/xxxxx.git  ! [rejected]        master -&amp;gt; master (non-fast-forward) error:failed to push some refs to &amp;">
 
 
 
@@ -325,8 +325,30 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/笔记-git-问题/" itemprop="url" rel="index">
-                    <span itemprop="name">笔记 git 问题</span>
+                  <a href="/categories/笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">笔记</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/笔记/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/笔记/git/问题/" itemprop="url" rel="index">
+                    <span itemprop="name">问题</span>
                   </a>
                 </span>
 
@@ -356,7 +378,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  162
+                  167
                 </span>
               
 
@@ -393,7 +415,7 @@
       
 
       
-        <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p><strong>如何解决failed to push some refs to git?</strong></p>
+        <p><strong>问题1：</strong> <strong><em>如何解决failed to push some refs to git?</em></strong></p>
 <font color="#ff00ff" size="4">$ git push -u origin master</font>
 
 <p>To <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:  xxx/xxxxx.git</p>
@@ -403,6 +425,7 @@
 <p>hint: Updates were rejected because the tip of your current branch is behin</p>
 <p>hint: its remote counterpart. Integrate the remote changes (e.g.</p>
 <p>hint: ‘git pull …’) before pushing again.</p>
+<p><strong>解决方案：</strong></p>
 <p>主要原因是github中的README.md文件不在本地代码目录中</p>
 <p>可以通过如下命令进行代码合并【注：pull=fetch+merge]</p>
 <font color="#ff00ff" size="4">$ git pull –rebase origin master</font>
@@ -454,8 +477,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/24/page/" rel="next" title="git使用中遇到的一些问题">
-                <i class="fa fa-chevron-left"></i> git使用中遇到的一些问题
+              <a href="/2018/11/27/小巷/" rel="next" title="小巷">
+                <i class="fa fa-chevron-left"></i> 小巷
               </a>
             
           </div>
@@ -514,17 +537,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -541,7 +555,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -610,22 +624,6 @@
       </section>
 
       
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
 
       
 
@@ -663,7 +661,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">|博客全站共432字</span>
+  <span class="post-count">|博客全站共270字</span>
 </div>
         
 
