@@ -376,7 +376,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  365
+                  458
                 </span>
               
 
@@ -392,7 +392,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -426,25 +426,44 @@
 <li><p><strong>配置git</strong>  </p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name "My Name" </span><br><span class="line">$ git config --global user.email myEmail@example.com</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>创建一个新仓库 – git init</strong></p>
+<li><p><strong>创建一个新仓库 </strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>比如我们在桌面创建一个文件夹 <em>git_exercise</em>, 打开终端，输入：</p>
+<li><p><strong>暂存</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>提交 – git commit</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m "message"</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>链接远程仓库</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin https://github.com/yourname/yourrepository.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>上传到服务器</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>$ cd Desktop/git_exercise/<br>$ git init</p>
+<p>Counting objects: 3, done.<br>Writing objects: 100% (3/3), 212 bytes | 0 bytes/s, done.<br>Total 3 (delta 0), reused 0 (delta 0)<br>To <a href="https://github.com/igeekbar/awesome-project.git" target="_blank" rel="noopener">https://github.com/igeekbar/awesome-project.git</a> </p>
+<p>*[new branch]      master -&gt; master</p>
 </blockquote>
-<p>命令行会出现</p>
+</li>
+<li><p><strong>克隆仓库</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/xxx/xxx.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>从服务器上获得修改</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="问题1"><a href="#问题1" class="headerlink" title="问题1:"></a>问题1:</h3><p> <strong><em>如何解决 failed to push some refs to git?</em></strong></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
-<p>​    To <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:  xxx/xxxxx.git</p>
-<p>​     ! [rejected]        master -&gt; master (non-fast-forward)</p>
-<p>​    <font color="#ff0000" size="4">error:failed to push some refs to <a href="mailto:&#39;git@github.com" target="_blank" rel="noopener">&#39;git@github.com</a>:xxx/xxx.git’</font> </p>
-<p>​    hint: Updates were rejected because the tip of your current branch is behin</p>
-<p>​    hint: its remote counterpart. Integrate the remote changes (e.g.</p>
-<p>​    hint: ‘git pull …’) before pushing again.</p>
-<p><strong>解决方案：</strong></p>
-<p>主要原因是github中的README.md文件不在本地代码目录中</p>
+<p>​    10.  <strong>其他使用方法可自行了解</strong></p>
+<h3 id="遇到过的问题及解决办法"><a href="#遇到过的问题及解决办法" class="headerlink" title="遇到过的问题及解决办法:"></a>遇到过的问题及解决办法:</h3><h4 id="问题1：-failed-to-push-some-refs-to-git"><a href="#问题1：-failed-to-push-some-refs-to-git" class="headerlink" title="问题1： failed to push some refs to git?"></a>问题1： <strong><em>failed to push some refs to git?</em></strong></h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p> To <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:  xxx/xxxxx.git</p>
+<p>! [rejected]        master -&gt; master (non-fast-forward)</p>
+<font color="#ff0000" size="4">error:failed to push some refs to <a href="mailto:&#39;git@github.com" target="_blank" rel="noopener">&#39;git@github.com</a>:xxx/xxx.git’</font> 
+
+<p>hint: Updates were rejected because the tip of your current branch is behin</p>
+<p>hint: its remote counterpart. Integrate the remote changes (e.g.</p>
+<p>hint: ‘git pull …’) before pushing again.</p>
+</blockquote>
+<h5 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a><strong><em>解决方案：</em></strong></h5><p>主要原因是github中的README.md文件不在本地代码目录中</p>
 <p>可以通过如下命令进行代码合并【注：pull=fetch+merge]</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull --rebase origin master</span><br></pre></td></tr></table></figure>
 <p>执行上面代码后可以看到本地代码库中多了README.md文件</p>
@@ -998,7 +1017,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">|博客全站共468字</span>
+  <span class="post-count">|博客全站共561字</span>
 </div>
         
 
