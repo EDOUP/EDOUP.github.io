@@ -354,7 +354,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  11
                 </span>
               
 
@@ -393,7 +393,10 @@
       
         
           
-            
+            <h1 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h1><ol>
+<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo 官网</a>:具备中文文档</li>
+</ol>
+
           
         
       
@@ -592,7 +595,7 @@
 </ul>
 <p>Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
 <p>Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。<a href="http://www.runoob.com/git/git-tutorial.html" target="_blank" rel="noopener">菜鸟教程简介</a></p>
-<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><ol>
+<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><ol>
 <li><p><strong>安装好git</strong>  <a href="https://www.cnblogs.com/mjbin/p/5820942.html" target="_blank" rel="noopener">点此查看30分钟新手git教程</a></p>
 </li>
 <li><p><strong>配置git</strong>  </p>
@@ -625,7 +628,7 @@
 </li>
 </ol>
 <p>​    10.  <strong>其他使用方法可自行了解</strong></p>
-<h3 id="遇到过的问题及解决办法"><a href="#遇到过的问题及解决办法" class="headerlink" title="遇到过的问题及解决办法:"></a>遇到过的问题及解决办法:</h3><h4 id="问题1：-failed-to-push-some-refs-to-git"><a href="#问题1：-failed-to-push-some-refs-to-git" class="headerlink" title="问题1： failed to push some refs to git?"></a>问题1： <strong><em>failed to push some refs to git?</em></strong></h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+<h2 id="遇到过的问题及解决办法"><a href="#遇到过的问题及解决办法" class="headerlink" title="遇到过的问题及解决办法:"></a>遇到过的问题及解决办法:</h2><h3 id="问题1：-failed-to-push-some-refs-to-git"><a href="#问题1：-failed-to-push-some-refs-to-git" class="headerlink" title="问题1： failed to push some refs to git?"></a>问题1： <strong><em>failed to push some refs to git?</em></strong></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p> To <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:  xxx/xxxxx.git</p>
 <p>! [rejected]        master -&gt; master (non-fast-forward)</p>
@@ -635,7 +638,7 @@
 <p>hint: its remote counterpart. Integrate the remote changes (e.g.</p>
 <p>hint: ‘git pull …’) before pushing again.</p>
 </blockquote>
-<h5 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a><strong><em>解决方案：</em></strong></h5><p>主要原因是github中的README.md文件不在本地代码目录中</p>
+<h4 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a><strong><em>解决方案：</em></strong></h4><p>主要原因是github中的README.md文件不在本地代码目录中</p>
 <p>可以通过如下命令进行代码合并【注：pull=fetch+merge]</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull --rebase origin master</span><br></pre></td></tr></table></figure>
 <p>执行上面代码后可以看到本地代码库中多了README.md文件</p>
@@ -1008,13 +1011,13 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">|博客全站共488字</span>
+  <span class="post-count">|博客全站共499字</span>
 </div>
 <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+    |本站总访问量<span id="busuanzi_value_site_pv"></span>次
 </span>
 <span id="busuanzi_container_site_uv">
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  |本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </span>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
