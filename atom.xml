@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-24T11:49:55.337Z</updated>
+  <updated>2018-12-24T12:59:57.548Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,16 +21,19 @@
     <link href="http://yoursite.com/2018/12/24/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AE%80%E4%BB%8B/"/>
     <id>http://yoursite.com/2018/12/24/hexo博客搭建简介/</id>
     <published>2018-12-24T11:33:07.000Z</published>
-    <updated>2018-12-24T11:49:55.337Z</updated>
+    <updated>2018-12-24T12:59:57.548Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h1><ol><li><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo 官网</a>:具备中文文档</li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><ul><li>本站使用Hexo + Next +GitHub Page + 阿里云域名解析</li></ul><ol><li><strong>hexo</strong> 官网: <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a></li><li><strong>hexo</strong>官方主题推荐: <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></li><li><strong>Next</strong>主题官网: <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a></li><li></li><li><strong>不蒜子</strong>两行代码搞定站点计数:<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">http://busuanzi.ibruce.info/</a></li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;简述&quot;&gt;&lt;a href=&quot;#简述&quot; class=&quot;headerlink&quot; title=&quot;简述&quot;&gt;&lt;/a&gt;简述&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+        &lt;h2 id=&quot;简述&quot;&gt;&lt;a href=&quot;#简述&quot; class=&quot;headerlink&quot; title=&quot;简述&quot;&gt;&lt;/a&gt;简述&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;本站使用Hexo + Next +GitHub Page + 阿里云域名解析&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;stro
       
     
     </summary>
