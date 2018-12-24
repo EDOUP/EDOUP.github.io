@@ -376,7 +376,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  167
+                  171
                 </span>
               
 
@@ -416,22 +416,21 @@
         
           
             <p><strong>问题1：</strong> <strong><em>如何解决failed to push some refs to git?</em></strong></p>
-<font color="#ff00ff" size="4">$ git push -u origin master</font>
-
-<p>To <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:  xxx/xxxxx.git</p>
-<p> ! [rejected]        master -&gt; master (non-fast-forward)</p>
-<font color="#ff0000" size="4">error:failed to push some refs to <a href="mailto:&#39;git@github.com" target="_blank" rel="noopener">&#39;git@github.com</a>:xxx/xxx.git’</font> 
-
-<p>hint: Updates were rejected because the tip of your current branch is behin</p>
-<p>hint: its remote counterpart. Integrate the remote changes (e.g.</p>
-<p>hint: ‘git pull …’) before pushing again.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>​    To <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:  xxx/xxxxx.git</p>
+<p>​     ! [rejected]        master -&gt; master (non-fast-forward)</p>
+<p>​    <font color="#ff0000" size="4">error:failed to push some refs to <a href="mailto:&#39;git@github.com" target="_blank" rel="noopener">&#39;git@github.com</a>:xxx/xxx.git’</font> </p>
+<p>​    hint: Updates were rejected because the tip of your current branch is behin</p>
+<p>​    hint: its remote counterpart. Integrate the remote changes (e.g.</p>
+<p>​    hint: ‘git pull …’) before pushing again.</p>
 <p><strong>解决方案：</strong></p>
 <p>主要原因是github中的README.md文件不在本地代码目录中</p>
 <p>可以通过如下命令进行代码合并【注：pull=fetch+merge]</p>
-<font color="#ff00ff" size="4">$ git pull –rebase origin master</font>
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull --rebase origin master</span><br></pre></td></tr></table></figure>
 <p>执行上面代码后可以看到本地代码库中多了README.md文件</p>
-<p>此时再执行语句 <font color="#ff00ff" size="3">git push -u origin master</font>即可完成代码上传到github</p>
+<p>此时再执行语句</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>即可完成代码上传到github</p>
 
           
         
@@ -979,7 +978,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">|博客全站共270字</span>
+  <span class="post-count">|博客全站共274字</span>
 </div>
         
 
