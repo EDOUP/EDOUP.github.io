@@ -8,7 +8,9 @@
 
   AQS 可近似简化为 state + CLH 队列
 
-- 乐观锁 CAS 悲观锁 synchronized
+  乐观锁 CAS 悲观锁 synchronized
+
+- [从根上理解用户态与内核态 (juejin.cn)](https://juejin.cn/post/6923863670132850701)
 
 - [volatile 和 CAS 的弊端之总线风暴](https://www.cnblogs.com/jiagoujishu/p/13744544.html)
 
